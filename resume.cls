@@ -94,7 +94,7 @@
 
 % Chinese setup
 \ifdef{\@zh}{
-  \setCJKmainfont{Noto Serif CJK SC}
+  \setCJKmainfont{Noto Sans CJK SC}
   % Redefine '\emph' to bold style
   % Credit: https://tex.stackexchange.com/a/227644
   \let\emph\relax  % there's no \RedeclareTextFontCommand

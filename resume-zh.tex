@@ -7,21 +7,20 @@
 
 % Chinese version
 \documentclass[zh]{resume}
-
 % Adjust icon size (default: same size as the text)
 \iconsize{\Large}
 
 % File information shown at the footer of the last page
 \fileinfo{%
-  \faCopyright{} 2018--2020, Weitian LI \hspace{0.5em}
+  \faCopyright{} 2018--2020, Zijian Wang \hspace{0.5em}
   \creativecommons{by}{4.0} \hspace{0.5em}
-  \githublink{liweitianux}{resume} \hspace{0.5em}
+  \githublink{qumn}{resume} \hspace{0.5em}
   \faEdit{} \today
 }
 
-\name{维天}{李}
+\name{子健}{汪}
 
-\keywords{BSD, Linux, Programming, Python, C, Shell, DevOps, SysAdmin}
+\keywords{Linux, Programming, Java, JavaScript, Shell, Sql}
 
 % \tagline{\icon{\faBinoculars}} <position-to-look-for>}
 % \tagline{<current-position>}
@@ -29,13 +28,14 @@
 % \photo{<height>}{<filename>}
 
 \profile{
-  \mobile{132-6262-0332}
-  \email{liweitianux@live.com}
-  \github{liweitianux} \\
-  \university{上海交通大学}
-  \degree{物理学 \textbullet 博士}
-  \birthday{1991-09-26}
-  \address{上海}
+  \mobile{180-8661-7441}
+  \email{qumn3497@qq.com}
+  \icontext{\faFlask}{2年}
+  \github{qumn} \\
+  \university{武汉职业技术学院}
+  \degree{软件工程 \textbullet 大专}
+  \birthday{2000-12-30}
+  \address{武汉}
   % Custom information:
   % \icontext{<icon>}{<text>}
   % \iconlink{<icon>}{<link>}{<text>}
@@ -48,144 +48,158 @@
 % Summary & Objectives
 %======================================================================
 {\onehalfspacing\hspace{2em}%
-物理学专业（射电天文方向）直博研究生，有扎实的物理、数学与统计学基础，
-擅长数据建模与分析，热衷计算机和网络技术，
-有 10 年的 Linux 和 BSD 使用经验，熟练掌握 Shell、Python 和 C 语言编程。
-积极实践自由开源精神，
-在 \link{https://github.com/liweitianux}{GitHub} 上分享多个项目，
-是 \link{https://www.dragonflybsd.org}{DragonFly BSD} 操作系统的开发者，
-并积极参与其他多个开源项目。
-\par}
+	计算机软件工程专业毕业生, 擅长 Java Web 开发,
+	有 4 年的 Linux 使用经验，熟练掌握 Java, Rust 和 JavaScript 等编程语言.
+	热衷学习新技术, 在业余时间学习了 Rust, Flutter 新兴等技术.
+	喜欢使用 Linux 命令行工具, 如 Git, Tmux, NeoVim
+	以及 \link{https://github.com/ibraheemdev/modern-unix}{Modern Unix} 等工具.
+	\par}
 
 %======================================================================
 \sectionTitle{技能和语言}{\faWrench}
 %======================================================================
 \begin{competences}
-  \comptence{操作系统}{%
-    \icon{\faLinux} Linux （10 年），
-    \icon{\faFreebsd} DragonFly BSD \& FreeBSD （7 年）
-  }
-  \comptence{编程}{%
-    Python, C, Shell, R, Tcl/Tk
-  }
-  \comptence{工具}{%
-    SSH, Git, Make, Tmux, Vi, Ansible
-  }
-  \comptence{数据分析}{%
-    R, Pandas; Matplotlib, ggplot2; Keras, Scikit-learn
-  }
-  \comptence{网站开发}{%
-    Flask, JavaScript, jQuery, Bootstrap
-  }
-  \comptence{\icon{\faLanguage} 语言}{
-    \textbf{英语} --- 读写（优良），听说（日常交流）
-  }
+	\comptence{操作系统}{%
+		\icon{\faLinux} Linux （4 年)
+	}
+	\comptence{编程}{%
+		Java, JavaScript, Rust, Sql, Dart
+	}
+	\comptence{工具}{%
+		IDEA, Docker, SSH, Git, Tmux, NeoVim
+	}
+	\comptence{前端开发}{%
+		Vue3, Flutter, React
+	}
+	\comptence{后端开发}{%
+		SpringBoot, SpringCloud Alibaba, Mybatis Plus
+	}
+	% \comptence{\icon{\faLanguage} 语言}{
+	%   \textbf{英语} --- 读写（优良），听说（日常交流）
+	% }
 \end{competences}
 
 %======================================================================
 \sectionTitle{教育背景}{\faGraduationCap}
 %======================================================================
 \begin{educations}
-  \education%
-    {2013.09}%
-    [2019.09]%
-    {上海交通大学}%
-    {物理与天文学院}%
-    {物理学}%
-    {博士}
-
-  \separator{0.5ex}
-  \education%
-    {2009.09}%
-    [2013.06]%
-    {上海交通大学}%
-    {物理与天文系}%
-    {应用物理学}%
-    {学士}
+	\education%
+	{2022.06}%
+	[2019.09]%
+	{武汉职业技术学院}%
+	{软件技术}%
+	{计算机科学}%
+	{大专}
 \end{educations}
 
 %======================================================================
 \sectionTitle{计算机技能}{\faCogs}
 %======================================================================
 \begin{itemize}
-  \item DragonFly BSD 操作系统开发者：
-    200+ 代码提交；内核以及系统工具；
-    在邮件列表和 IRC 频道交流和回答问题
-  \item 使用 Ansible 管理 VPS，部署个人域名邮箱、权威 DNS、网站、Git、IRC 等服务
-  \item 搭建并管理课题组的工作站、计算集群（4 节点）和网络设备
-  \item 参与配置和测试上海天文台的 SKA 高性能计算集群原型机
-    （1 管理节点 + 1 存储节点 + 4 计算节点）
-  \item 设计并开发了\enquote{2014 第一届中国—新西兰联合 SKA 暑期学校}的整个网站
-    （Django, Bootstrap, jQuery）
+	\item 熟悉 Java Web 开发, 掌握常用的 SpringBoot, SSM, MyBatisPlus 等框架.
+	\item 熟悉 SpringCloud Alibaba, 熟练使用常用的 Nacos, Gateway, Ribbon, Sentinel 等组件
+	\item 熟悉 Vue3, Flutter, React 等前端开发框架
+	\item 熟悉 Java, Rust, JavaScript, Dart 等编程语言
+	\item 熟悉关系型数据库 MySQL, 熟悉 Redis, MongoDB 等 NoSQL 数据库
+	\item 了解 JVM 内部原理, 如: 类加载机制, 运行时内存布局, 垃圾回收机制等
+	\item 熟悉 Linux 操作系统, 熟练使用 Git, Tmux, NeoVim 等工具
+	\item 熟悉常见算法和数据结构, \link{https://leetcode.cn/u/qu-ming-nan-o/}{\texttt{LeetCode}} 累计 120+ 题解
+	\item 在校期间负责维护学校工作室的服务器, 为学校提供网站建设服务
 \end{itemize}
 
 %======================================================================
 \sectionTitle{个人项目}{\faCode}
 %======================================================================
 \begin{itemize}
-  \item \link{https://github.com/liweitianux/atoolbox}{\texttt{atoolbox}}:
-    (Python, Shell)
-    多年来累积的各种工具，帮助管理系统、执行常用任务、分析天文数据等
-  \item \link{https://github.com/liweitianux/dfly-update}{\texttt{dfly-update}}:
-    (Shell)
-    DragonFly BSD 系统更新程序
-  \item \link{https://github.com/liweitianux/openrcs}{\texttt{openrcs}}:
-    (C)
-    改进 \texttt{OpenBSD RCS}，使其与 \texttt{GNU RCS} 足够兼容
-  \item \link{https://github.com/liweitianux/fg21sim}{\texttt{fg21sim}}:
-    (Python)
-    模拟低频射电天空图像
-  \item \link{https://github.com/liweitianux/cdae-eor}{\texttt{cdae-eor}}:
-    (Python, Keras)
-    使用卷积去噪自动编码器（CDAE）分离宇宙再电离（EoR）信号
-  \item \link{https://github.com/liweitianux/chandra-acis-analysis}{\texttt{chandra-acis-analysis}}:
-    (Python, Shell, Tcl)
-    X~射线天文观测数据的半自动化分析程序
-  \item \link{https://github.com/liweitianux/resume}{\texttt{resume}}:
-    (\LaTeX)
-    \emph{此简历}的模板和源文件
+	\item \link{https://github.com/qumn/LocalBiz}{\texttt{LocalBiz}}:
+	      本地商业服务平台, 为用户提供附近的商业服务信息
+	      \begin{itemize}
+		      \item \link{https://github.com/qumn/LocalBizFlutter}{\underline{\texttt{{\faGithub}客户端}}} 使用 Flutter 开发, 具有跨平台的特性支持 Android, iOS, Web, Linux, Mac 和 Windows
+		      \item \link{https://github.com/qumn/LocalBiz}{\underline{\texttt{{\faGithub}后端}}} 基于Ruoyi Cloud开发, 使用SpringBoot, SpringCloud Alibaba, Mybatis Plus等技术
+		      \item ORM 测试 \link{https://github.com/database-rider/database-rider}{\texttt{DataBase Rider}} 框架进行测试
+	      \end{itemize}
+	\item \link{https://gitee.com/qumn/cotm}{\texttt{cotm}}:
+	      跨组织人才管理系统, 为企业提供人才管理服务
+	      \begin{itemize}
+		      \item \link{https://gitee.com/qumn/cotm-ui}{\underline{\texttt{{\faGithub}前端}}}: Vue, VueX, ElementUI和Axios 等
+		      \item \link{https://gitee.com/qumn/cotm}{\underline{\texttt{{\faGithub}后端}}}: SpringBoot, Shiro, MyBatisPlus, Redis 等
+	      \end{itemize}
+	\item \link{https://github.com/qumn/jvmrs}{\underline{\texttt{{\faGithub}jvmrs}}}:
+	      用 Rust 编写的 JVM, 用于学习 JVM 原理
+	      \begin{itemize}
+		      \item Class 文件解析
+		      \item 运行时数据区
+		      \item 大部分字节码解释器
+	      \end{itemize}
+	\item \link{https://github.com/qumn/eChat/blob/main/src/main.rs}{\underline{\texttt{{\faGithub}eChat}}}:
+	      用 Rust 编写的聊天室, 用于学习 Rust, 以及{\textbf{协程}}.
+	      \begin{itemize}
+		      \item Web 框架 \link{https://github.com/tokio-rs/axum}{\texttt{axum}}.
+		      \item 异步运行时: \link{https://github.com/tokio-rs/tokio}{\texttt{tokio}}
+		      \item 数据库: \link{https://github.com/launchbadge/sqlx}{\texttt{sqlx}}
+	      \end{itemize}
 \end{itemize}
 
+\newpage
 %======================================================================
-\sectionTitle{科研成果}{\faAtom}
-%======================================================================
-\begin{itemize}
-  \item 开发低频射电天空图像模拟软件：
-    \link{https://github.com/liweitianux/fg21sim}{\texttt{FG21sim}}
-  \item 开发程序实现~X~射线天文观测数据的半自动化分析：
-    \link{https://github.com/liweitianux/chandra-acis-analysis}{\texttt{chandra-acis-analysis}}
-  \item 利用卷积去噪自动编码器（CDAE）在频率维度分离微弱的宇宙再电离（EoR）信号
-  \item 利用卷积神经网络（CNN）对 FIRST 巡天的射电星系图像根据形态特征进行分类
-  \item 显著改进星系团射电晕的建模，并考虑低频干涉阵列的复杂仪器效应
-  \item 改进~X~射线光谱拟合的背景成分建模，获到更准确可靠的拟合结果
-  \item 发表 2 篇第一作者以及 8 篇合作者 SCI 论文
-\end{itemize}
-
-%======================================================================
-\sectionTitle{实习经历}{\faBriefcase}
+\sectionTitle{项目经历}{\faBriefcase}
 %======================================================================
 \begin{experiences}
-  \experience%
-    [2018.04]%
-    {2018.08}%
-    {数据工程师 @ 上海领脉网络科技（初创公司）}%
-    [\begin{itemize}
-      \item 从 Amazon 网页搜索并挖取商品与广告信息
-        （Python, Requests, BeautifulSoup）
-      \item 配置 Airflow 服务器和数据库等基础设施，
-        定期从 Amazon 获取产品销售与广告投放等数据
-      \item 开发网站（Flask, jQuery），帮助客户优化 Amazon 广告投放
-    \end{itemize}]
+	\experience%
+	[2022.04]%
+  {2021.07}%
+	{开发工程师 @ 武汉夏宇信息有限公司 }%
+	[\begin{itemize}
+			\item {\textbf{统一登录平台}}\\
+			      为公司内部基于不同框架开发的多个系统提供统一的登录平台
+			      \begin{itemize}
+				      \item 前端: 使用Vue3开发的单页面应用
+				      \item 使用 Ruoyi 开发的项目, 提供统一的权限管理
+				      \item 和多个系统进行对接, 使用JWT 或 Cookie 进行身份认证
+			      \end{itemize}
+			\item {\textbf{航空管理系统}}\\
+			      包含航空公司管理, 航班管理, 学习资源管理, 乘客管理等功能 \\
+			      项目职责
+			      \begin{itemize}
+				      \item 大屏展示接口开发
+				      \item 内部员工培训学习资源管理模块开发
+				      \item 维护已经存在的接口
+			      \end{itemize}
+		\end{itemize}]
+	\separator{0.5ex}
 
-  \separator{0.5ex}
-  \experience%
-    [2013.07]%
-    {2013.09}%
-    {网站开发 @ 97 随访（初创公司）}%
-    [\begin{itemize}
-      \item 后端开发（Django），完成用户注册、数据存储和搜索等功能
-      \item 前端开发（jQuery, AJAX），对患者各项指标随时间的变化进行可视化
-    \end{itemize}]
+	\experience%
+	[2023.06]%
+	{2022.04}%
+	{开发工程师 @ 华通科技 }%
+	[\begin{itemize}
+			\item {\textbf{国铁物资系统}}\\
+			      一个仓库库存管理系统, 具有库存管理, 库存预警, 库存盘点等功能
+			      \begin{itemize}
+				      \item 前端: 使用uni-app开发的微信小程序
+				      \item 后端: SpringBoot, Shiro, MyBatisPlus, Redis 等
+			      \end{itemize}
+			      项目职责
+			      \begin{itemize}
+              \item 负责物资管理模块的开发
+              \item 负责库存管理模块的开发
+              \item 负责库存入库模块的开发
+			      \end{itemize}
+			\item {\textbf{装备流程管理系统}} \\
+			      此项目包含装备组装流程, 装备审核流程, 装备出库流程等功能.
+			      \begin{itemize}
+				      \item 前端: 基于\link{https://github.com/layui/layui}{\underline{\texttt{layui}}} 框架开发
+				      \item 后端: 基于\link{https://gitee.com/stylefeng/guns}{\underline{\texttt{guns}}} 框架开发, 有 SpringBoot, MyBatis, Shiro, Redis 等.
+			      \end{itemize}
+			      项目职责
+			      \begin{itemize}
+				      \item 开发与配置，产品项目显示化流程需求对接
+				      \item 负责装备审核流程管理模块的后端以及前端的开发
+				      \item 负责编写Dockerfile, 以及docker-compose文件部署项目
+			      \end{itemize}
+		\end{itemize}]
+	\separator{0.5ex}
+
 \end{experiences}
-
 \end{document}
+
