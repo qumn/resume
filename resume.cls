@@ -38,6 +38,7 @@
 \RequirePackage{fontawesome5}
 \RequirePackage{parskip}  % auto adjust parskip and items skip
 \RequirePackage{titlesec}
+\RequirePackage{datetime}
 \RequirePackage{enumitem}
 \RequirePackage{setspace}
 \RequirePackage{array}
@@ -113,6 +114,13 @@
 \newcommand*{\locationSymbol}{\faMapMarker*}
 \newcommand*{\phoneSymbol}{\faPhone}
 \newcommand*{\universitySymbol}{\faUniversity}
+\newcommand*{\websiteSymbol}{\faLink}
+
+% Create a tag
+% Usage: \cvtag{<tag label>}
+\newcommand{\cvtag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=darkGrey!70,rounded corners=0.5ex,inner xsep=1ex,inner ysep =0.55ex,text height=1.3ex,text depth=.25ex]{#1};
+}
 
 % Color setup
 \ifdef{\@monochrome}%
@@ -369,7 +377,8 @@
 \newcommand*{\separator}[1]{%
   \multicolumn{2}{c}{} \\[\dimexpr #1 - 1em]
 }
-
+\newcommand*{\sociallink}[3]{\mbox{\textcolor{symbolcolor}{#1}\link{#2}{#3}\hspace{0.8em}}}
+\newcommand*{\website}[2]{\sociallink{\websiteSymbol}{#1}{#2}}
 %%
 %% Section: competences
 %%
@@ -415,41 +424,64 @@
     #1 & #6 in #5 \\
   }
 }
-
-%%
-%% Section: projects
-%%
-
-\NewDocumentEnvironment{projects}{}{%
-  \begin{longtable}{R{\leftcolwidth} | L{\rightcolwidth}}
+% Define the 'projects' environment
+\newenvironment{projects}{%
+  \begin{longtable}{l}
 }{%
   \end{longtable}
 }
 
+% Define the 'project' entry in the 'projects' environment
+%   {<link1> <link2>}
+% Usage:
 % \project
-%   {<start-date>}   % #1
-%   [<end-date>]     % #2
-%   {<department>}   % #3
-%   {<type>}         % #4
-%   {<name>}         % #5
-%   {<description>}  % #6
-%   [<tags>]         % #7
-\NewDocumentCommand{\project}{m o m m m m o}{
-  \multirowcell{2}[0ex][r]{%
-    \IfValueTF{#2}{#2}{\ifdef{\@zh}{现在}{present}} \\ #1%
-  }
-  & \textbf{#5} \\*
-  \ifdef{\@zh}{%
-    & #3 \textbullet #4 \\*
-  }{%
-    & #4, #3 \\*
-  }
-  & \begin{minipage}[t]{\rightcolwidth} #6 \end{minipage} \\*
-  \IfValueT{#7}{%
-    & \footnotesize{\tags{#7}} \\
-  }
+%   {<Project name>}{<dates>}
+%   {<Project description>}
+%   {<techno1>,<techno2>}
+\newcommand\project[5]{
+  \begin{minipage}[t]{\dimexpr(\linewidth) - 1.5em}
+    \textbf{\textsc{#1}} \hfill \textsc{#2}\smallskip\\
+    % #3\\
+    #3\smallskip\\
+    {\textbf{采用技术: }}\footnotesize{\foreach \n in {#4}{\cvtag{\n}}}\\
+  \end{minipage}
+  \\*
 }
 
+% %%
+% %% Section: projects
+% %%
+%
+% \NewDocumentEnvironment{projects}{}{%
+%   \begin{longtable}{R{\leftcolwidth} | L{\rightcolwidth}}
+% }{%
+%   \end{longtable}
+% }
+%
+% % \project
+% %   {<start-date>}   % #1
+% %   [<end-date>]     % #2
+% %   {<department>}   % #3
+% %   {<type>}         % #4
+% %   {<name>}         % #5
+% %   {<description>}  % #6
+% %   [<tags>]         % #7
+% \NewDocumentCommand{\project}{m o m m m m o}{
+%   \multirowcell{2}[0ex][r]{%
+%     \IfValueTF{#2}{#2}{\ifdef{\@zh}{现在}{present}} \\ #1%
+%   }
+%   & \textbf{#5} \\*
+%   \ifdef{\@zh}{%
+%     & #3 \textbullet #4 \\*
+%   }{%
+%     & #4, #3 \\*
+%   }
+%   & \begin{minipage}[t]{\rightcolwidth} #6 \end{minipage} \\*
+%   \IfValueT{#7}{%
+%     & \footnotesize{\tags{#7}} \\
+%   }
+% }
+%
 %%
 %% Section: experiences
 %%
