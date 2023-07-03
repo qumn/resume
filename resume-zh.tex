@@ -141,7 +141,7 @@
 
 \begin{projects}
 	\project
-  {\color{accentcolor}{机场运营管理}}{2022.02 - 2022.06}
+  {\color{accentcolor}{机场运营管理}}{2021.06 - 至今}
   {
     用于维护机场运营管理，包含航空公司管理、航班管理、学习资源管理、乘客管理等功能。项目使用采用分布式框架开发，
     基于 Ruoyi Cloud 框架. \\
@@ -151,7 +151,44 @@
   {Nacos,Spring Cloud,SpringBoot,MyBatis,Mysql,Vue,ElementUi,Redis}
 
 	\project
-  {\color{accentcolor}{田园网}}{2021.08 - 2022.02}
+  {\color{accentcolor}{武汉高铁工务段仓库APP}}{2023.03 - 2023.06}
+  {
+    武汉高铁工务段仓库物质的管理，上下架、盘点等操作。使用UniApp开发的App程序
+    采用前后端分离，包含微信小程序端。\\ 
+    {\textbf{主要模块: } 物料上架、物料下架、仓库盘点。} \\
+    {\textbf{负责模块：} 物料上架、物料下架、仓库盘点。}
+  }
+  {Vue,UniApp,VueX}
+  {
+    {\textbf{业务模块:}}
+    \begin{itemize}
+      \item 物料上架是对物料上架仓库中某一货架的货位操作。
+      \item 物料下架是对物料下架仓库中某一货架的货位操作。
+      \item 仓库盘点是对仓库、货架、货位实际物料数量盘点操作。
+    \end{itemize}
+  }
+
+	\project
+  {\color{accentcolor}{中谷苑车辆道闸系统}}{2022.08 - 2023.03}
+  {
+    项目主要对小区业主车辆管理，临时车进行收费等。 \\
+    {\textbf{主要模块: } 车辆管理、车辆监控、进出监管、人员管理、收入对账。} \\
+    {\textbf{负责模块：} 车辆管理、车辆监控、进出监管、人员管理、收入对账。}
+  }
+  {Nacos,Spring Cloud,SpringBoot,MyBatis,Mysql,Vue,ElementUi,Redis}
+  {
+    {\textbf{业务模块:}}
+    \begin{itemize}
+      \item 车辆管理是对小区业主的车辆进行月卡管理、月卡续费、地上下车库管理等。
+      \item 车辆监控是对月卡车辆、临时车进出记录的相关记录等。
+      \item 进出监管是基于小区内南北苑岗亭使用，使用websocket获取进出小区车辆数据来进行开道闸的操作。
+      \item 人员管理是针对岗亭和财务人员的管理。
+      \item 收入对账是财务人员查询岗亭的临时车收费或者月卡的月卡续费等数据统计。
+    \end{itemize}
+  }
+
+	\project
+  {\color{accentcolor}{田园网}}{2022.02 - 2022.07}
   {
     用于海南省农产品销售平台，用户农户的产品种植计划、商户注册、个类农产品的统计。项目使用采用分 布式框架开发，
     技术采用Spring Boot、Spring Cloud \& Alibaba注册中心、配置中心选型Nacos，流量控制框架选 型Sentinel。
@@ -160,9 +197,18 @@
   {\textbf{负责模块：} 门户商品展示，商家管理（商家审核、商家上下架）, 商品管理。}
   }
   {Nacos,Spring Cloud,SpringBoot,MyBatis,Mysql,ElementUi,Redis}
+  {
+    {\textbf{业务模块: }}
+    \begin{itemize}
+      \item 田园网商品、商户展示。
+      \item 订单管理商家可以对订单进行管理(查询, 接单/拒单, 统计, 生成报表)。
+      \item 商品分类管理。
+      \item 商家信息填写审核以及商家上架（使用版本号控制后台审核以及门户的商户信息，审核通过同步最新商户信息）。
+    \end{itemize}
+  }
 
 	\project
-  {\color{accentcolor}{统一管理平台}}{2021.06 - 2021.08}
+  {\color{accentcolor}{统一管理平台}}{2021.11 - 2022.01}
   {
     公司内部管理存在多个管理系统, 为了方便用户使用, 开发了一个统一管理平台, 
     通过此平台用户可以一次登录访问其他项目而且同意管理其他项目的权限和字典等模块. 
@@ -171,20 +217,38 @@
     {\textbf{负责模块：} 统一登录、字典管理、权限管理。}
   }
   {SpringBoot,多数据源,Redis}
-
-	\project
-  {\color{accentcolor}{武汉高铁工务段仓库APP}}{2021.06 - 2021.08}
   {
-    武汉高铁工务段仓库物质的管理，上下架、盘点等操作。使用UniApp开发的App程序
-    采用前后端分离，包含微信小程序端。\\ 
-    {\textbf{主要模块: } 物料上架、物料下架、仓库盘点。} \\
-    {\textbf{负责模块：} 物料上架、物料下架、仓库盘点。}
+    {\textbf{业务模块:}}
+    \begin{itemize}
+      \item 统一登录在此项目中登录后可以直接访问其他项目无需另外登录。
+      \item 字典管理是对其他项目的字典进行统一管理。
+      \item 权限管理是对其他项目的权限进行统一管理。
+    \end{itemize}
   }
-  {Vue,UniApp,VueX}
-
 
 	\project
-  {\color{accentcolor}{LocalBiz}}{2021.06 - 2021.08}
+  {\color{accentcolor}{115社区}}{2021.6 - 2021.011}
+  {
+    以社区为单位，党员下沉到每个小区，通过报到的方式，领取任务。 
+    群众通过app将小区内存在问题反映 至社区工作人员。 
+    社区工作人员把日常巡查采集到的文字、图片、等信息及时上报到网格管理中心，切实发挥好APP 手机系统的作用。
+    社区工作人员、党员通过加强对小区的部件和事件巡查，建立一种监督和处置互相分离的形式。
+    主要优势是能够主动发现，及时处理各类问题，加强管理能力和处理速度，将问题解决在事故发生之前。 \\
+    {\textbf{主要模块: } 系统设置、信息管理、任务管理、党员管理、干部管理、社区动态等。} \\
+    {\textbf{负责模块：} 信息管理、任务管理、社区动态。}
+  }
+  {SpringBoot,MyBatis,SpringMVC,shiro,uni-app,Vue,redis}
+  {
+    {\textbf{业务模块:}}
+    \begin{itemize}
+      \item 信息管理主要处理群众上报小区意见或者举报党员违规行为。
+      \item 任务管理主要实现发布任务给党员执行,然后进行审核,还可查看任务完成情况和统计社区之间完成任务的排行。
+      \item 社区动态主要是书记发布动态可供全部人员查看,以及社区相关的信息。
+    \end{itemize}
+  }
+
+	\project
+  {\color{accentcolor}{LocalBiz}}{2023.02 - 2023.06}
   {
     \website{https://github.com/qumn/localBiz}{LocalBiz}意为 Local Business 附近的商业,  此项目旨在使用户可以足不出户的体验附近的商业资源。
     项目前端使用 Flutter 开发, 提供跨平台的支持. 后端在Ruoyi Cloud的基础上开发 \\
@@ -192,7 +256,6 @@
     {\textbf{负责模块：} 商家管理、商品管理、订单管理、用户管理等。}
   }
   {Flutter,Nacos,Spring Cloud,SpringBoot,MyBatis,Mysql,NaiveUI,Redis}
-
 
 
 	\project
