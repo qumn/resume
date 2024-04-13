@@ -443,7 +443,7 @@
   \begin{minipage}[t]{\dimexpr(\linewidth) - 1.5em}
     \textbf{\textsc{#1}} \hfill \textsc{#2}\smallskip\\
     % #3\\
-    #3\smallskip\\
+    #3\smallskip
     {\textbf{采用技术: }}\footnotesize{\foreach \n in {#4}{\cvtag{\n}}}\\
     #5\smallskip
   \end{minipage}
