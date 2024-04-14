@@ -12,7 +12,7 @@
 
 % File information shown at the footer of the last page
 \fileinfo{%
-  \faCopyright{} 2018--2020, Zijian Wang \hspace{0.5em}
+  \faCopyright{} 2021--2024, Zijian Wang \hspace{0.5em}
   \creativecommons{by}{4.0} \hspace{0.5em}
   \githublink{qumn}{resume} \hspace{0.5em}
   \faEdit{} \today
@@ -108,6 +108,7 @@
         \item 搭建 Zbox(禅道) 私服, 跟踪项目进度
         \item 编写前后端自动化构建发布脚本, 大幅度提升发版效率
         \item 编写自动化备份脚本, 备份数据库, 用户文件
+        \item 负责智慧养老, 智慧工地项目性能优化.
         \item 引入 InfluxDb 时序数据库, 大幅度节省服务器资源
       \end{itemize}
   ]
@@ -119,9 +120,10 @@
 	[
     {\textbf{工作内容}}
       \begin{itemize}
+        \item 负责线上项目服务器环境搭建以及维护
+        \item 负责 统一管理平台, 机场运营管理 等项目开发
         \item 负责与新疆合作公司进行日常开发工作和维护工作
         \item 修改若依数据权限逻辑, 以实现跨数据库数据权限控制
-        \item 负责 统一管理平台, 机场运营管理 等项目开发
       \end{itemize}
   ]
 
@@ -160,7 +162,7 @@
   {SpringBoot,Flowable,Mysql,Redis,MyBatis Plus,Mybatis Plus Join}
 
 	\project
-  {\color{accentcolor}{安全智慧工地管理平台}}{2023.06 - 至今}
+  {\color{accentcolor}{安全智慧工地管理平台}}{2023.11 - 至今}
   {
     安全智慧工地管理平台是基于物联网、大数据、AI技术，立足于施工现场的 "人、物、环境、管理" 四大安全监管要素，
     以构建智慧工地物联网硬件监测技术为主，以工地软件轻量化监管为辅，建立支撑现场管理、互联协同、智能决策、数据共享的信息化系统
@@ -173,7 +175,7 @@
   {Spring Boot,Mqtt,Nacos,OpenFeign,MyBatis,Mysql,Redis,Golang}
 
 	\project
-  {\color{accentcolor}{智能养老社区服务}}{2021.06 - 至今}
+  {\color{accentcolor}{智能养老社区服务}}{2023.06 - 2023.12}
   {
     智能养老社区服务是一个老人设备信息管理平台, 通过老人与设备关联, 通过设备实时数据对老人异常状态预警.
     当老人异常时联系工作人员进行处理.
@@ -186,7 +188,7 @@
   {SpringBoot,MyBatis Plus,Mysql,Redis}
 
   \project
-  {\color{accentcolor}{机场运营管理}}{2021.06 - 至今}
+  {\color{accentcolor}{机场运营管理}}{2021.06 - 2022.07}
   {
     用于维护机场运营管理，包含航空公司管理、航班管理、学习资源管理、乘客管理等功能。项目使用采用分布式框架开发，
     基于 Ruoyi Cloud 框架. \\
@@ -196,7 +198,7 @@
   {Spring Cloud,Nacos,OpenFeign,MyBatis,Mysql,Redis,Vue,ElementUi}
 
 	\project
-  {\color{accentcolor}{中谷苑车辆道闸系统}}{2022.08 - 2023.03}
+  {\color{accentcolor}{中谷苑车辆道闸系统}}{2022.02 - 2022.07}
   {
     项目主要对小区业主车辆管理，临时车进行收费等
     \begin{itemize}
@@ -210,7 +212,7 @@
   {Nacos,Spring Cloud,SpringBoot,MyBatis,Mysql,Vue,ElementUi,Redis}
 
 	\project
-  {\color{accentcolor}{田园网}}{2022.02 - 2022.07}
+  {\color{accentcolor}{田园网}}{2021.09 - 2022.01}
   {
     用于海南省农产品销售平台，用户农户的产品种植计划、商户注册、个类农产品的统计。项目使用采用分 布式框架开发，
     技术采用Spring Boot、Spring Cloud \& Alibaba注册中心、配置中心选型Nacos，流量控制框架选 型Sentinel。
@@ -225,7 +227,7 @@
   {Nacos,Spring Cloud,SpringBoot,MyBatis,Mysql,ElementUi,Redis}
 
 	\project
-  {\color{accentcolor}{统一管理平台}}{2021.11 - 2022.01}
+  {\color{accentcolor}{统一管理平台}}{2021.06 - 2021.09}
   {
     公司内部管理存在多个管理系统, 为了方便用户使用, 开发了一个统一管理平台, 
     通过此平台用户可以一次登录访问其他项目而且同意管理其他项目的权限和字典等模块. 
@@ -241,10 +243,10 @@
 
 \end{projects}
 
-\sectionTitle{个人项目}{\faLaptop}
+\sectionTitle{个人项目}{\faCode}
 \begin{projects}
 	\project
-  {\color{accentcolor}{alumnihub}}{2022.01 - 2022.02}
+  {\color{accentcolor}{alumnihub}}{2024.02 - 至今}
   {
     \website{https://github.com/qumn/alumnihub}{alumnihub}校园生活为个人学习DDD(领域驱动设计)和CQRS(命令查询责任分离)思想的实践项目. \\
     项目分为 Comment, Trade, Forum, LostFound 以及 User 5个 Bounded Contex(界限上下文)
@@ -253,7 +255,7 @@
       \item User 与其他业务 Bounded Context 为 Shared Kernal 模式
       \item Comment 与 Trade, Forum, LostFound 为 Customer/Supplier 模式
       \item 采用 testcontainers 实现数据库集成测试
-      \item ORM 采用 Ktorm 自定义连接器实现逻辑删除(支持嵌套链表查询)
+      \item ORM 采用 Ktorm 自定义连接器实现逻辑删除(支持链接查询, 子查询)
     \end{itemize}
   }
   {Kotlin,gradle,ktorm,Axon,MQTT,PostgreSQL,SpringBoot,SpringSecurity,Jetpack Compose}
